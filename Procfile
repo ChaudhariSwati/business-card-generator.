@@ -1,0 +1,1 @@
+web: gunicorn --name=business-card-generator --access-logfile=- --error-logfile=- business_card_generator.wsgi:app
