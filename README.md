@@ -1,117 +1,93 @@
-![Banner QR Card](https://business-card-generator.vercel.app/vcard.svg?firstname=Romain&lastname=Clement&picture=https%3A%2F%2Fromain-clement.net%2Fstatic%2Ficon.png&company=Freelance&job=Software+|+Data+|+AI&email=contact%2Bgithub%40romain-clement.net&phone=&website=https%3A%2F%2Fromain-clement.net)
 
-# Business Card Generator
 
-[![CI/CD](https://github.com/rclement/business-card-generator/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/rclement/business-card-generator/actions/workflows/ci-cd.yml)
-[![License](https://img.shields.io/github/license/rclement/business-card-generator)](https://github.com/rmnclmnt/business-card-generator/blob/master/LICENSE)
+```markdown
+![Banner QR Card](https://business-card-generator.vercel.app/vcard.svg?firstname=Swati&lastname=Chaudhari&picture=https%3A%2F%2Fexample.com%2Ficon.png&company=Freelancer&job=Frontend+Developer&email=yourname%40example.com)
 
-Everyone needs a business card. Or multiple ones. Or in multiple formats.
-Might as well be able to generate them on the fly.
+# 🔧 Business Card Generator – Personalized Version
 
-This software allows to generate digital QR-code business cards:
+This is a **customized version** of an open-source business card generator that creates QR-based digital cards in multiple formats like **vCard**, **MeCard**, **SVG**, and **PNG**.
 
-- [MeCard](https://en.wikipedia.org/wiki/MeCard_(QR_code))
-- [vCard](https://en.wikipedia.org/wiki/VCard)
+I modified and deployed this project to:
+- Learn about full-stack deployment
+- Explore QR-based data encoding
+- Customize UI, themes, and features
 
-## Usage
+🌐 **[Live Demo](https://your-deployment-link.vercel.app)**  
+🧑‍💻 **[My GitHub Fork](https://github.com/your-username/business-card-generator)**
 
-The easiest way to generate a business card is to use the online
-[web application](https://business-card-generator.vercel.app).
+---
 
-You can also integrate URLs for website/keynotes integration using the following scheme:
+## ✨ Features
+
+- Generate **vCard** / **MeCard** format QR codes
+- Export in **SVG**, **PNG**, or **VCF**
+- Live preview and customization options
+- Responsive and deployable with one click
+- Powered by Flask + Python backend and modern frontend stack
+
+---
+
+## 🚀 Usage
+
+You can generate a business card directly using the deployed version or construct custom URLs like:
 
 ```
-https://business-card-generator.vercel.app/<card-type>.<card-format>?<card-parameters>
-```
 
-Available card types:
+[https://your-deployment-link.vercel.app/vcard.svg?firstname=Swati\&lastname=Chaudhari\&email=hello@example.com](https://your-deployment-link.vercel.app/vcard.svg?firstname=Swati&lastname=Chaudhari&email=hello@example.com)
 
-- `vcard`
-- `mecard`
+````
 
-Available card formats:
+---
 
-- `svg`
-- `png`
-- `vcf`
+## 🛠️ Tech Stack
 
-Available card parameters:
+- **Frontend**: React.js, Tailwind CSS
+- **Backend**: Python (Flask)
+- **Deployment**: Vercel
+- **Extras**: GitHub Actions (CI/CD), QR generation libraries
 
-| Parameter   | Format                | Required | Description            |
-| ----------- | --------------------- | -------- | ---------------------- |
-| `firstname` | `string`              | Yes      | First name             |
-| `lastname`  | `str`                 | Yes      | Last name              |
-| `nickname`  | `str`                 | No       | Nickname               |
-| `birthday`  | `date` (`YYYY-MM-DD`) | No       | Birthday               |
-| `company`   | `str`                 | No       | Company name           |
-| `job`       | `str`                 | No       | Job title              |
-| `email`     | `EmailStr`            | No       | E-mail address         |
-| `phone`     | `str`                 | No       | Phone number           |
-| `website`   | `HttpUrl`             | No       | Website URL            |
-| `picture`   | `HttpUrl`             | No       | Picture URL            |
-| `street`    | `str`                 | No       | Street number and name |
-| `city`      | `str`                 | No       | City                   |
-| `zipcode`   | `str`                 | No       | Zipcode                |
-| `state`     | `str`                 | No       | State or region        |
-| `country`   | `str`                 | No       | Country                |
+---
 
-## Deployment
+## 🧠 What I Learned
 
-If you do not trust the official deployment, feel free to deploy your own!
+- Working with URL-based parameter passing
+- Handling image and card rendering via query strings
+- Deploying Flask + static frontend on platforms like **Vercel**
+- How QR standards like `vCard` and `MeCard` work
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/rclement/business-card-generator)
-[![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rclement/business-card-generator)
+---
 
-## Development
-
-### Python
+## 📦 Setup for Development
 
 ```bash
 cp .example.env .env
 uv sync
-uv run inv qa
 uv run flask run
-```
+````
 
-### VSCode
-
-If using VSCode, use the following configuration in `.vscode/launch.json`:
+VSCode debugging:
 
 ```json
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Python: Flask",
-      "type": "python",
-      "request": "launch",
-      "module": "flask",
-      "env": {
-        "FLASK_APP": "business_card_generator.app:create_app",
-        "FLASK_ENV": "development"
-      },
-      "args": ["run", "--no-debugger"],
-      "jinja": true,
-      "envFile": "",
-      "justMyCode": false
-    },
-    {
-      "name": "tests",
-      "type": "python",
-      "request": "test",
-      "justMyCode": false
-    }
-  ]
+  "FLASK_APP": "business_card_generator.app:create_app",
+  "FLASK_ENV": "development"
 }
 ```
 
-## Inspiration
+---
 
-- [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
-- [François Best Business Card](https://francoisbest.com/business-card)
+## 🙏 Original Author Credit
 
-## License
+This project is originally created by [**Romain Clement**](https://github.com/rclement).
+My version is a fork with UI and usage-level customizations for portfolio purposes.
+Original repo: [rclement/business-card-generator](https://github.com/rclement/business-card-generator)
 
-Licensed under GNU Affero General Public License v3.0 (AGPLv3)
+---
 
-Copyright (c) 2022 - present  Romain Clement
+## 📜 License
+
+This project is distributed under the **GNU AGPLv3 License**.
+
+
+
+
