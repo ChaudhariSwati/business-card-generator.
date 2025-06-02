@@ -12,8 +12,8 @@ I modified and deployed this project to:
 - Explore QR-based data encoding
 - Customize UI, themes, and features
 
-🌐 **[Live Demo](https://your-deployment-link.vercel.app)**  
-🧑‍💻 **[My GitHub Fork](https://github.com/your-username/business-card-generator)**
+🌐 **[Live Demo](https://business-card-generator-mu.vercel.app/)**  
+🧑‍💻 **[My GitHub Fork](https://github.com/ChaudhariSwati/business-card-generator)**
 
 ---
 
