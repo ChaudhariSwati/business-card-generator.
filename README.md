@@ -27,13 +27,24 @@ I modified and deployed this project to:
 
 ---
 
-## 🚀 Usage
 
-You can generate a business card directly using the deployed version or construct custom URLs like:
+
+---
+
+## Usage
+
+You can generate a business card directly using the deployed version or construct custom URLs like this:
 
 ```
+https://business-card-generator.vercel.app/vcard.svg?firstname=Swati&lastname=Chaudhari&job=Frontend+Developer&email=swatidchaudhary17@gmail.com&website=https://www.linkedin.com/in/swati-chaudhari-42b21a301
+```
 
-[https://your-deployment-link.vercel.app/vcard.svg?firstname=Swati\&lastname=Chaudhari\&email=hello@example.com](https://your-deployment-link.vercel.app/vcard.svg?firstname=Swati&lastname=Chaudhari&email=hello@example.com)
+Or as a clickable link:
+
+[https://business-card-generator.vercel.app/vcard.svg?firstname=Swati\&lastname=Chaudhari\&job=Frontend+Developer\&email=swatidchaudhary17%40gmail.com\&website=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fswati-chaudhari-42b21a301](https://business-card-generator.vercel.app/vcard.svg?firstname=Swati&lastname=Chaudhari&job=Frontend+Developer&email=swatidchaudhary17%40gmail.com&website=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fswati-chaudhari-42b21a301)
+
+---
+
 
 ````
 
