@@ -1,7 +1,7 @@
 
 
-```markdown
-![Banner QR Card](https://business-card-generator.vercel.app/vcard.svg?firstname=Swati&lastname=Chaudhari&picture=https%3A%2F%2Fexample.com%2Ficon.png&company=Freelancer&job=Frontend+Developer&email=yourname%40example.com)
+https://business-card-generator.vercel.app/vcard.svg?firstname=Swati&lastname=Chaudhari&job=Frontend+Developer&email=swatidchaudhary17%40gmail.com&website=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fswati-chaudhari-42b21a301
+
 
 # 🔧 Business Card Generator – Personalized Version
 
