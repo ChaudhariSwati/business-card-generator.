@@ -1,4 +1,7 @@
-fastapi
-uvicorn
+flask
+pydantic
 qrcode
 python-multipart
+whitenoise
+gunicorn
+
